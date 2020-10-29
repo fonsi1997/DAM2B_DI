@@ -1,0 +1,49 @@
+﻿<Window x:Class="Proyecto_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proyecto_1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lblInformacionPersonal" Content="Información Personal" HorizontalAlignment="Left" Margin="330,10,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label x:Name="lblNombre" Content="Nombre" HorizontalAlignment="Left" Margin="80,44,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblApellido" Content="Apellido" HorizontalAlignment="Left" Margin="318,44,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblApellido2" Content="2º Apellido" HorizontalAlignment="Left" Margin="558,44,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCorreo" Content="Correo" HorizontalAlignment="Left" Margin="88,75,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblTarjeta" Content="Tarjeta" HorizontalAlignment="Left" Margin="386,106,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label x:Name="lblTipoTarjeta" Content="Tipo de tarjeta" HorizontalAlignment="Left" Margin="47,140,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPropietario" Content="Propietario" HorizontalAlignment="Left" Margin="304,140,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblNumeroTarjeta" Content="Nº Tarjeta" HorizontalAlignment="Left" Margin="565,140,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCvv2" Content="cvv2" HorizontalAlignment="Left" Margin="100,171,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblFechaExpiracion" Content="Fecha Expiración" HorizontalAlignment="Left" Margin="274,171,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblDireccionFacturacion" Content="Dirección de Facturación" HorizontalAlignment="Left" Margin="330,197,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label x:Name="lblDireccion" Content="Dirección" HorizontalAlignment="Left" Margin="312,267,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCiudad" Content="Ciudad" HorizontalAlignment="Left" Margin="87,236,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblProvincia" Content="Provincia" HorizontalAlignment="Left" Margin="314,236,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCP" Content="C.P" HorizontalAlignment="Left" Margin="600,236,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPais" Content="País" HorizontalAlignment="Left" Margin="104,267,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblTitulo" Content="Completar el siguiente formulario" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="23" Margin="158,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="txtApellido" HorizontalAlignment="Left" Height="23" Margin="398,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtApellido2" HorizontalAlignment="Left" Height="23" Margin="646,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCorreo" HorizontalAlignment="Left" Height="23" Margin="158,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" TextChanged="TextBox_TextChanged_1"/>
+        <ComboBox x:Name="cmbTipoTarjeta" HorizontalAlignment="Left" Margin="158,144,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPropietario" HorizontalAlignment="Left" Height="23" Margin="398,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtPropietario_TextChanged"/>
+        <TextBox x:Name="txtNumeroTarjeta" HorizontalAlignment="Left" Height="23" Margin="646,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCvv2" HorizontalAlignment="Left" Height="23" Margin="158,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="54"/>
+        <ComboBox x:Name="cmbFechaExpiracion1" HorizontalAlignment="Left" Margin="398,175,0,0" VerticalAlignment="Top" Width="54"/>
+        <ComboBox x:Name="cmbFechaExpiracion2" HorizontalAlignment="Left" Margin="472,175,0,0" VerticalAlignment="Top" Width="46"/>
+        <TextBox x:Name="txtCiudad" HorizontalAlignment="Left" Height="23" Margin="158,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtProvincia" HorizontalAlignment="Left" Height="23" Margin="398,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCP" HorizontalAlignment="Left" Height="23" Margin="646,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66"/>
+        <ComboBox x:Name="cmbPais" HorizontalAlignment="Left" Margin="158,271,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtDireccion" HorizontalAlignment="Left" Height="23" Margin="398,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212"/>
+        <CheckBox x:Name="chbVerificacion" Content="Seleccionar para certificar que tiene 18 años o más" HorizontalAlignment="Left" Margin="114,316,0,0" VerticalAlignment="Top" FontSize="10" FontWeight="Bold"/>
+        <CheckBox x:Name="chbTerminoCompra" Content="Estoy de acuerdo con los términos de compra" HorizontalAlignment="Left" Margin="420,316,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" FontSize="10" FontWeight="Bold"/>
+        <Button x:Name="btnComprar" Content="COMPRAR" HorizontalAlignment="Left" Margin="274,367,0,0" VerticalAlignment="Top" Width="98" FontWeight="Bold" FontSize="16" Background="#FFA3F769" BorderBrush="#FF0B6C0B" Foreground="Black"/>
+        <Button x:Name="btnCancelar" Content="CANCELAR" HorizontalAlignment="Left" Margin="420,367,0,0" VerticalAlignment="Top" Width="98" FontWeight="Bold" FontSize="16" Background="#FFE85151" BorderBrush="#FF991414"/>
+
+    </Grid>
+</Window>
