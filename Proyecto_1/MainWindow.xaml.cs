@@ -44,5 +44,10 @@ namespace Proyecto_1
         {
 
         }
+
+        private void btnComprar_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Su compra ha sido realizada");
+        }
     }
 }
